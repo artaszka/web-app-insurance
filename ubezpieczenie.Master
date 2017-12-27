@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ubezpieczenie.Master.cs" Inherits="ubezpieczenie.ubezpieczenie" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" charset="utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="masterHead" runat="server">
+                
+            
+    
+    </asp:ContentPlaceHolder>
+    
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 955px;
+            height: 43px;
+        }
+    </style>
+    
+    
+</head>
+<body style="  background-image: url('http://localhost:56581/Obrazki/CloudsDesktopLight.jpg')" >
+    <form id="form1" style="background-image: url('http://localhost:56581/Obrazki/Clouds.jpg'); background-color:rgba(255, 255, 255, 0.96);  border-color:rgba(255, 255, 255, 0.56);  width:955px; margin: 0 auto; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" runat="server">
+<table style="padding: 0px; border-spacing:0px,0px; margin: 0px; ">
+    <tr>
+        <td colspan="2"  style="background-color:rgba(0, 8, 75, 0.10); text-align: center; " class="auto-style1">
+            <h1  >
+                <asp:TextBox ID="Title1" runat="server" style="text-align:center" Text="Twój Zakład Ubezpieczeń" ForeColor="White" 
+                        Font-Bold="True"  Font-Names="Tahoma" BackColor="#003366" BorderColor="#000066" BorderStyle="Outset" BorderWidth="2px" Font-Size="21pt" Height="35px" Width="904px"></asp:TextBox>
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td style="vertical-align:top; border-right: 3px ridge rgba(0, 0, 0, 0.72); height: 300px; background-color:rgba(103, 184, 211, 0.70); width: 150px; text-align:center">
+            <h2>
+                Menu</h2>
+            <asp:Button ID="Podrozne" runat="server" Text="Podróżne" Font-Bold="true" PostBackUrl="~/podrozne.aspx" Width="120px" Height="35px" CausesValidation="False" Font-Names="Tahoma" BackColor="#003366" ForeColor="White" BorderColor="#000066" BorderStyle="Outset" BorderWidth="2px" /><br /><br />
+            <asp:Button ID="Mieszkanie" runat="server" Text="Mieszkanie" Font-Bold="true" PostBackUrl="~/mieszkanie.aspx" Width="120px" Height="35px" CausesValidation="False" Font-Names="Tahoma" BackColor="#003366" ForeColor="White" BorderColor="#000066" BorderStyle="Outset" BorderWidth="2px"/><br /><br />
+            <asp:Button ID="StronaGlowna" runat="server" Text="Strona Główna" Font-Bold="true" PostBackUrl="~/default.aspx" Width="120px" Height="35px" CausesValidation="False" Font-Names="Tahoma" BackColor="#003366" ForeColor="White" BorderColor="#000066" BorderStyle="Outset" BorderWidth="2px"/><br /><br />
+
+        </td>
+        <td style="height: 300px; background-color:rgba(103, 184, 211, 0.70); width: 805px;">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="border-color:rgba(0, 8, 75, 0.10); border:none;  background-color:rgba(0, 8, 75, 0.10) ; text-align: center; height:40px;" >
+            
+        
+            <asp:ContentPlaceHolder ID="MasterStopka" runat="server">
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+</table>
+    
+
+</form>
+    
+</body>
+
+</html>
